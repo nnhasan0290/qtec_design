@@ -7,3 +7,75 @@
   --heading: #333461;
   --paragraph: #4a556c;
 }
+
+/* heading */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav__btn {
+    display: none;
+  }
+}
+
+/* //hero */
+.hero {
+  background-color: var(--background);
+  padding-top: 100px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__left {
+  max-width: 515px;
+}
+.hero__left > img {
+  transform: translate(-50%, -50px);
+}
+
+.hero__right {
+  padding-right: 100px;
+  transform: translateY(20px);
+  position: relative;
+}
+
+.hero__right--successRate {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  padding: 24px;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.hero__right--successRate > div {
+  display: flex;
+  flex-direction: column;
+}
+.hero__right--successRate > div span:first-child {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+.hero__right--successRate > div span:last-child {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
