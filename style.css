@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background: #faf8f6;
+  --font: "Kumbh Sans", sans-serif;
+  --btn: #20ad96;
+  --heading: #333461;
+  --paragraph: #4a556c;
+}
